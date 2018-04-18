@@ -1,0 +1,30 @@
+to print box pattern with only number 1
+INPUT :-5
+OUTPUT :-
+11111
+1   1
+1   1
+1   1
+11111
+
+CODE :-
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	int i,j;
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=n;j++)
+        {
+            if(j==n || j==1 || i==1 || i==n)
+                printf("1");
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+}
